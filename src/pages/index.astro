@@ -65,11 +65,19 @@
 			}
 			nav select {
 				background-color: white;
-				border: none;
-				font-family: 'Roboto', sans-serif;
+				border-radius: 5px;
+				box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 				font-weight: bold;
 				padding: 5px;
 				cursor: pointer;
+				appearance: none;
+				-webkit-appearance: none;
+				-moz-appearance: none;
+				transition: all 0.3s;
+			}
+
+			nav select:hover {
+				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 			}
 			@media screen and (max-width: 768px) {
 				h1 {
