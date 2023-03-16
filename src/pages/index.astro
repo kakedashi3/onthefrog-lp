@@ -5,9 +5,9 @@
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>OnTheFrog</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -71,13 +71,31 @@
 				padding: 5px;
 				cursor: pointer;
 			}
+			@media screen and (max-width: 768px) {
+				h1 {
+					font-size: 2em;
+				}
+				h2 {
+					font-size: 1.5em;
+				}
+			}
 		</style>
 	</head>
+
+
 	<body>
 		<header>
 			<img src="public/header-top.png" alt="Header Image" width="100%" height="auto">
 			<h1>OnTheFrog</h1>
 			<h2></h2>
+			<nav>
+				<select onchange="location = this.value;">
+					<option value="#">Select a page</option>
+					<option value="home.html">Home</option>
+					<option value="about.html">About</option>
+					<option value="contact.html">Contact</option>
+				</select>
+			</nav>
 		</header>
 		<h3>What is "OnTheFrog"?</h3>
 		<main>
